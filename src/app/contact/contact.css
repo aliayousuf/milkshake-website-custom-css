@@ -1,0 +1,63 @@
+/* contact.css */
+
+/* Set the body background color to dark pink */
+body {
+    background-color: #ca99b2; /* Dark pink for the entire page */
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Set a default font */
+}
+
+/* Style for the contact form container */
+.contact-form-container {
+    background-color: #ff69b4; /* Lighter pink for the form */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px; /* Limit the width for larger screens */
+    margin: 50px auto; /* Center the form with some margin on top */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.contact-form-container h2{
+    font-family: 'Pacifico', cursive; /* Apply the stunning font */
+   font-size: 30px;
+}
+.contact-form-container h2 {
+    text-align: center;
+
+}
+
+.contact-form-container label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-form-container input,
+.contact-form-container select,
+.contact-form-container textarea {
+    width: 100%; /* Make inputs full width */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form-container button {
+    background-color: #ff1493; /* Button color */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* Make button full width */
+}
+
+.contact-form-container button:hover {
+    background-color: #4e2037; /* Lighter pink on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .contact-form-container {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}

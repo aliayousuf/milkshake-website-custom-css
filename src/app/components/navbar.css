@@ -1,0 +1,109 @@
+/* styles/Navbar.module.css */
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #200311; /* Apply the mixed color as the background */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo-container {
+    flex: 1;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+.navbar-heading {
+    margin-left: 10px; /* Space between logo and heading */
+    font-size: 24px; /* Adjust size as needed */
+      
+   
+    
+}
+
+.navbar-heading {
+    /* background-color: mix(#fff, #e91e63, 82%); */
+    font-family: "Inter", sans-serif;
+    color: #e4b8ce;
+	font-size: calc(1em + 1vw) ;  
+	font-weight: 900;
+	text-shadow: 
+		-0.0075em 0.0075em 0 mix(#fff, #e91e63, 94%),
+		0.005em 0.005em 0 mix(#fff, #e91e63, 60%),
+		0.01em 0.01em 0 mix(#fff, #e91e63, 62%), 
+		0.015em 0.015em mix(#fff, #e91e63, 64%), 
+		0.02em 0.02em 0 mix(#fff, #e91e63, 66%), 
+		0.025em 0.025em 0 mix(#fff, #e91e63, 68%),
+		0.03em 0.03em 0 mix(#fff, #e91e63, 70%),
+		0.035em 0.035em 0 mix(#fff, #e91e63, 72%);
+        font-family: "Inter", sans-serif;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #FF4C7D;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: #faa0cd;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #FF4C7D;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        transform: translateY(-20px);
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .menu.active {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+

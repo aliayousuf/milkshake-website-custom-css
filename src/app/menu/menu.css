@@ -1,0 +1,55 @@
+.menu-container {
+    text-align: center; /* Center the text */
+    padding: 40px; /* Increased padding around the container */
+    background-color: #f8f8f8; /* Light background color */
+}
+
+.menu-title {
+    font-size: 3rem; /* Larger font size for the title */
+    margin: 20px 0; /* Margin above and below the title */
+    color: #333; /* Dark color for the title */
+    font-family: 'Pacifico', cursive; /* Stylish font */
+}
+
+.cards-container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of cards */
+    justify-content: center; /* Center the cards */
+    gap: 20px; /* Space between cards */
+}
+
+.milkshake-card {
+    background-color: #FF6F91; /* Card background color */
+    border-radius: 20px; /* More rounded corners */
+    padding: 20px; /* Padding inside the card */
+    margin: 10px; /* Space between cards */
+    width: 300px; /* Fixed width for cards */
+    text-align: center; /* Center text inside cards */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+    position: relative; /* Position relative for pseudo-elements */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.milkshake-card:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+.milkshake-image {
+    border-radius: 15px; /* Rounded corners for images */
+    margin-bottom: 15px; /* Space below the image */
+    transition: transform 0.3s; /* Smooth transition for image */
+}
+
+.milkshake-card:hover .milkshake-image {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+
+.milkshake-name {
+    font-family: 'Pacifico', cursive; /* Use a stylish font */
+    font-size: 1.5rem; /* Font size for milkshake name */
+    margin: 0; /* Remove default margin */
+    color: #fff; /* White color for the name */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+}

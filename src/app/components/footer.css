@@ -1,0 +1,106 @@
+.footer {
+    background-color: #ee597cbd; /* Light pink background */
+    color: #3b3b3b; /* Dark text color */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-logo h1 {
+    font-family: 'Lobster', cursive; /* A fun font for the logo */
+    font-size: 2.5rem;
+    color: #e91e63; /* Soft peach color */
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #200311;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    color: #e91e63; /* Change color on hover */
+}
+
+.footer-socials {
+    margin-top: 20px;
+}
+
+.footer-socials h3 {
+    margin-bottom: 10px;
+    color: #200311;
+    
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #200311;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #e91e63; /* Change color on hover */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #200311;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center items */
+    }
+
+    .footer-logo h1 {
+        font-size: 2rem; /* Reduce logo size */
+    }
+
+    .footer-links ul {
+        display: flex;
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center links */
+    }
+
+    .footer-links ul li {
+        margin: 5px 0; /* Reduce margin */
+    }
+
+    .social-icons {
+        margin-top: 10px; /* Add space above social icons */
+    }
+
+    .social-icons a {
+        margin: 0 5px; /* Reduce margin between icons */
+        font-size: 1.2rem; /* Reduce icon size */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-logo h1 {
+        font-size: 1.5rem; /* Further reduce logo size */
+    }
+
+    .footer-bottom {
+        font-size: 0.8rem; /* Reduce font size for copyright */
+    }
+}

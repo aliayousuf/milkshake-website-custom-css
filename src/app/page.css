@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); /* Import a stunning font */
+
+.responsive-div {
+  background-color: #F66C9E; /* Set your desired background color */
+  width: 100%; /* Full width */
+  height: 100vh; /* Full height of the viewport */
+  display: flex; /* Center content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  position: relative; /* Set position relative for absolute positioning of images */
+  overflow: hidden;  /*Prevent overflow */
+}
+
+.text-container {
+  position: absolute; /* Position the text absolutely */
+  top: 10%; /* Adjust as necessary to position vertically */
+  left: 10%; /* Adjust as necessary to position horizontally */
+  color: white; /* Text color */
+  text-align: left; /* Align text to the left */
+  z-index: 1; /* Ensure text is above the image */
+}
+
+.heading {
+  font-family: 'Pacifico', cursive; /* Apply the stunning font */
+  font-size: 4rem; /* Increase font size for larger screens */
+  margin: 0; /* Remove default margin */
+  line-height: 1.2; /* Adjust line height for better readability */
+}
+
+.description {
+  font-family: 'Pacifico', cursive; /* Use the same stunning font for description */
+  font-size: 1.5rem; /* Increase font size for description */
+  margin-top: 20px; /* Space between heading and description */
+  max-width: 600px; /* Limit width for better readability */
+  line-height: 1.5; /* Increase line height for better readability */
+}
+
+.button-container {
+  margin-top: 20px; /* Space between description and buttons */
+}
+
+.milkshake-button {
+  background-color: #FF6F91; /* Pink background color */
+  color: white; /* Text color */
+  border: none; /* Remove default border */
+  border-radius: 25px; /* Rounded corners */
+  padding: 15px 30px; /* Padding for the button */
+  font-size: 1.2rem; /* Font size for button text */
+  margin-right: 10px; /* Space between buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-top: 30px;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.milkshake-button:hover {
+  background-color: #FF4C7D; /* Darker pink on hover */
+  background-image: linear-gradient(to right, #FF4C7D, #A45DBD); /* Pink to purple gradient on hover */
+}
+
+
+
+.lower-right-image {
+  position: absolute; /* Position the image absolutely */
+  bottom: 20px; /* Adjust as necessary */
+  right: 20px; /* Adjust as necessary */
+  width: 40vw; /* Responsive width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.right-side-image {
+  position: absolute; /* Position the image absolutely */
+  top: 60px; /* Align with the bottom */
+  right: 50px; /* Adjust as necessary */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+
+
+
+@media (max-width: 400px) {
+  .heading {
+    font-size: 2rem; /* Smaller font size for heading */
+  }
+
+  .description {
+    font-size: 0.9rem; /* Smaller font size for description */
+    max-width: 100%; /* Allow description to take full width */
+  }
+
+  .button-container {
+    margin-top: 15px; /* Reduce space between description and buttons */
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons */
+  }
+
+  .milkshake-button {
+    padding: 10px 20px; /* Smaller padding for buttons */
+    font-size: 1rem; /* Smaller font size for button text */
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 10px; /* Add space between buttons */
+    width: 100%; /* Make buttons full width */
+  }
+
+  .upper-left-image, .lower-right-image, .right-side-image {
+    width: 30vw; /* Adjust size for smaller screens */
+  }
+}
+
+
+
+
+
+@media (max-width: 400px) {
+  .heading {
+    font-size: 2rem; /* Smaller font size for heading */
+  }
+
+  .description {
+    font-size: 0.9rem; /* Smaller font size for description */
+    max-width: 100%; /* Allow description to take full width */
+  }
+
+  .text-container {
+    top: 20%; /* Lower the text container slightly */
+  }
+
+  .button-container {
+    margin-top: 15px; /* Reduce space between description and buttons */
+    flex-direction: row; /* Align buttons in a row */
+    justify-content: center; /* Center buttons */
+    width: 100%; /* Make button container full width */
+  }
+
+  .milkshake-button {
+    padding: 8px 15px; /* Smaller padding for buttons */
+    font-size: 0.9rem; /* Smaller font size for button text */
+    margin: 0 5px; /* Add space between buttons */
+    width: auto; /* Allow buttons to size based on content */
+  }
+
+  .upper-left-image {
+    width: 40vw; /* Increase size of the upper left image */
+  }
+
+  .lower-right-image, .right-side-image {
+    width: 30vw; /* Adjust size for smaller screens */
+    position: relative; /* Change to relative for centering */
+    left: 50%; /* Center the right-side image */
+    transform: translateX(-50%); /* Adjust for centering */
+  }
+
+  .right-side-image {
+    top: 0px; /* Adjust vertical position if needed */
+    width: auto;
+  }
+
+  .button-container{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .milkshake-button{
+    margin-top: 80px;
+    justify-content: center;
+  }
+  .upper-left-image{
+    top: 0;
+    width: 500px;
+    left: 0%;
+  }
+}
+
+/*   arrival section      */
+
+
+
+.latest-arrivals {
+  background-color: #fff; /* White background for contrast */
+  padding: 20px; /* Padding around the section */
+  text-align: center; /* Center the text */
+}
+
+.arrivals-heading {
+  font-family: 'Pacifico', cursive; /* Use the same font */
+  font-size: 2.5rem; /* Font size for heading */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.cards-container {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow wrapping of cards */
+  justify-content: center; /* Center the cards */
+}
+
+.milkshake-card {
+  background-color: #F66C9E; /* Card background color */
+  border-radius: 15px; /* Rounded corners */
+  padding: 10px; /* Padding inside the card */
+  margin: 10px; /* Space between cards */
+  width: 150px; /* Fixed width for cards */
+  text-align: center; /* Center text inside cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.milkshake-card:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+.milkshake-image {
+  border-radius: 10px; /* Rounded corners for images */
+  margin-bottom: 10px; /* Space below the image */
+}
+
+.milkshake-name {
+  font-family: 'Pacifico', cursive; /* Use the same font */
+  font-size: 1.2rem; /* Font size for milkshake name */
+  margin: 0; /* Remove default margin /* Ensure no margin for the name */
+}
